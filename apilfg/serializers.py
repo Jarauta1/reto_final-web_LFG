@@ -17,10 +17,10 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
         model = Group
         fields = ('server_id', 'user_id', 'icon', 'group_name', 'members', 'channels')
 
-    class UsersSerializer(serializers.HyperlinkedModelSerializer):
-        class Meta:
-            model = Users
-            fields = ('username', 'password', 'email', 'avatar', 'groups', 'msg')
+class UsersSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Users
+        fields = ('username', 'password', 'email', 'avatar', 'groups', 'msg')
 
 class MensageSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
