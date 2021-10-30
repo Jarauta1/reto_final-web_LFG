@@ -1,10 +1,10 @@
 from django.contrib import admin
-from .models import Server, Group, Users, Mensage, Channel
+from .models import Server, Group, Users, Message, Channel
 
-# Registro de modelos
+# Model registration
 
 admin.site.register(Server)
 admin.site.register(Group)
 admin.site.register(Users)
-admin.site.register(Mensage)
+admin.site.register(Message)
 admin.site.register(Channel)

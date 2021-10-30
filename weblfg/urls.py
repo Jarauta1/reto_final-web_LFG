@@ -1,8 +1,8 @@
-# Configurar endpoints
+# Configure endpoints
 
 from django.contrib import admin
 
-# Importamos las urls que teníamos definidas dentro de nuestra api
+# We import the urls that we had defined within our api
 from django.urls import path, include
 
 urlpatterns = [
